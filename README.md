@@ -51,6 +51,7 @@ JC-62 machine.
   6. JMP X : The flow of code jumps to the X memory address.
   7. JN X : Jump if negative. Loops only if the condition is negative.
   8. HLT : Halt, this is where the execution of the code stops.
+
 #How to run
   On the left hand side is a text window where you write your code.
   In the middle there is table which corresponds to the memory. 
@@ -59,8 +60,6 @@ JC-62 machine.
   After setting the values, next part is to type in the code and see the flow of memory in registers.
   Write your code on the left side and hit submit.
   Last but not the least hit "Step" to see how it runs.
-
-#
  
 #Sample code
   LDA X 
@@ -69,6 +68,7 @@ JC-62 machine.
   ADD
   STA Z 
   HLT 
+
 #Execution of sample code
   LDA X (Say you have set the label as X and value as 12, so it will load ACC with value of X)
   MBA   (Move: B <- A)
@@ -76,5 +76,7 @@ JC-62 machine.
   ADD (ACC <- ACC + B)
   STA Z (Store the contents on ACC onto a new variable)
   HLT (Stop)
+
 This project is done in python 3 and GUI framwork used is Tkinter.
+
 To study more about this framework : https://www.youtube.com/watch?v=RJB1Ek2Ko_Y&list=PL6gx4Cwl9DGBwibXFtPtflztSNPGuIB_d
