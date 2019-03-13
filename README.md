@@ -73,6 +73,7 @@ JC-62 machine.
  
 
 #Sample code
+  
   LDA X 
   
   MBA   
@@ -86,6 +87,7 @@ JC-62 machine.
   HLT 
 
 #Execution of sample code
+  
   LDA X (Say you have set the label as X and value as 12, so it will load ACC with value of X)
   
   MBA   (Move: B <- A)
