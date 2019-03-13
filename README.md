@@ -1,7 +1,10 @@
 
 #8-bit-simulator-JC-62-machine-
+
 GUI software implementation of very first computer. 
+
 (COMPUTER ORGANISATION AND ARCHITECTURE)
+
 JC-62 simulator help us to perform all the instructions of JC-62 machine. JC-62 is
 a simple computer which helps us to perform simple addition, subtraction and
 branching. A single 12-bit-wide bus provides for exchange of information between
@@ -21,6 +24,7 @@ contains a single flip-flop that is set whenever its contents are negative
 number.) The value of this "negative flag" provides input to the controller/
 sequencer, and, as we shall see, permits implementation of conditional branching
 instructions .
+
 The machine's RAM memory is accessed by first placing the 8-bit address in the
 Memory Address Register (MAR). An active Read (R) control signal to the RAM will
 then cause the selected word from the RAM to appear in the Memory Data
@@ -54,27 +58,44 @@ JC-62 machine.
 
 #How to run
   On the left hand side is a text window where you write your code.
+  
   In the middle there is table which corresponds to the memory. 
+  
   Double click on any address then edit its name and value below the table, hit "Set Values" to set them.
+  
   Eg. You choose address 1 change the label from NULL to X and value to 12. Now your variable X contains 12.
+  
   After setting the values, next part is to type in the code and see the flow of memory in registers.
+  
   Write your code on the left side and hit submit.
+  
   Last but not the least hit "Step" to see how it runs.
  
+
 #Sample code
   LDA X 
+  
   MBA   
+  
   LDA Y 
+  
   ADD
+  
   STA Z 
+  
   HLT 
 
 #Execution of sample code
   LDA X (Say you have set the label as X and value as 12, so it will load ACC with value of X)
+  
   MBA   (Move: B <- A)
+  
   LDA Y (Say you have set another label as Y and value as 13, so it will load ACC with value of Y)
+  
   ADD (ACC <- ACC + B)
+  
   STA Z (Store the contents on ACC onto a new variable)
+  
   HLT (Stop)
 
 This project is done in python 3 and GUI framwork used is Tkinter.
